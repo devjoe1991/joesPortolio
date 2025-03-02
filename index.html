@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joe's Web App Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+    <!-- Hero Section -->
+    <section class="hero relative">
+        <div class="scene">
+            <div class="light-control">
+                <button class="light-toggle">
+                    <i class="fas fa-lightbulb"></i>
+                </button>
+            </div>
+            
+            <div class="light-bulb">
+                <div class="bulb"></div>
+                <div class="wire"></div>
+            </div>
+
+            <div class="workspace">
+                <div class="monitor">
+                    <div class="screen">
+                        <!-- Text will be added via CSS pseudo-element -->
+                    </div>
+                </div>
+                <div class="desk"></div>
+            </div>
+
+            <div class="developer">
+                <div class="developer-body">
+                    <div class="hoodie"></div>
+                    <div class="head">
+                        <div class="hair"></div>
+                    </div>
+                    <div class="arm-left"></div>
+                    <div class="arm-right"></div>
+                </div>
+                <div class="chair">
+                    <div class="chair-back"></div>
+                    <div class="chair-base"></div>
+                    <div class="chair-wheels"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Particles Container -->
+        <div id="particles-js" class="absolute inset-0 pointer-events-none"></div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20 px-4 md:px-8 relative">
+        <div class="particles-section" id="particles-services"></div>
+        <div class="max-w-7xl mx-auto relative z-10">
+            <h2 class="text-4xl font-bold text-center mb-12">My Services</h2>
+            
+            <div class="scroll-wrapper">
+                <button class="scroll-indicator scroll-left">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="scroll-indicator scroll-right">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                
+                <div class="scroll-container">
+                    <div class="card-container">
+                        <!-- Service Cards -->
+                        <div class="service-card rounded-xl shadow-lg">
+                            <h3>Full Stack Development</h3>
+                            <p>End-to-end web application development with modern technologies.</p>
+                        </div>
+                        
+                        <div class="service-card rounded-xl shadow-lg">
+                            <h3>UI/UX Design</h3>
+                            <p>Creating intuitive and beautiful user interfaces.</p>
+                        </div>
+                        
+                        <div class="service-card rounded-xl shadow-lg">
+                            <h3>Backend Development</h3>
+                            <p>Robust server-side solutions and API development.</p>
+                        </div>
+                        
+                        <div class="service-card rounded-xl shadow-lg">
+                            <h3>Frontend Development</h3>
+                            <p>Responsive and interactive web interfaces.</p>
+                        </div>
+                        
+                        <div class="service-card rounded-xl shadow-lg">
+                            <h3>Mobile Development</h3>
+                            <p>Cross-platform mobile applications using React Native.</p>
+                        </div>
+
+                        <div class="service-card rounded-xl shadow-lg">
+                            <h3>API Development</h3>
+                            <p>Custom RESTful and GraphQL API design and implementation for seamless integration.</p>
+                        </div>
+
+                        <div class="service-card rounded-xl shadow-lg">
+                            <h3>Database Architecture</h3>
+                            <p>Efficient database design and optimization for scalable applications using SQL and NoSQL solutions.</p>
+                        </div>
+
+                        <div class="service-card rounded-xl shadow-lg">
+                            <h3>Cloud Solutions</h3>
+                            <p>AWS and Azure cloud infrastructure setup, deployment, and maintenance for robust applications.</p>
+                        </div>
+
+                        <div class="service-card rounded-xl shadow-lg">
+                            <h3>Performance Optimization</h3>
+                            <p>Code optimization and performance tuning to ensure fast, efficient web applications.</p>
+                        </div>
+
+                        <div class="service-card rounded-xl shadow-lg">
+                            <h3>Security Implementation</h3>
+                            <p>Web application security best practices, authentication systems, and data protection.</p>
+                        </div>
+
+                        <div class="service-card rounded-xl shadow-lg">
+                            <h3>Technical Consultation</h3>
+                            <p>Expert advice on technology stack selection, architecture planning, and development strategies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="py-20 px-4 md:px-8 bg-gray-100 dark:bg-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 dark:text-white">Portfolio</h2>
+            
+            <!-- Portfolio Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Boroughly.com Card -->
+                <a href="https://boroughly.com" target="_blank" 
+                   class="portfolio-card rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-4 dark:text-white">Boroughly.com</h3>
+                        <p class="text-gray-600 dark:text-gray-300">A comprehensive platform for borough exploration and community engagement.</p>
+                    </div>
+                </a>
+
+                <!-- Simbabimba22.com Card -->
+                <a href="https://simbabimba22.com" target="_blank"
+                   class="portfolio-card rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-4 dark:text-white">Simbabimba22.com</h3>
+                        <p class="text-gray-600 dark:text-gray-300">Interactive web platform showcasing innovative digital solutions.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 px-4 md:px-8">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 dark:text-white">Get in Touch</h2>
+            
+            <div class="contact-form rounded-xl shadow-lg p-8">
+                <form class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Name</label>
+                        <input type="text" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Email</label>
+                        <input type="email" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Message</label>
+                        <textarea class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600" rows="4"></textarea>
+                    </div>
+                    <button class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="particles-config.js"></script>
+    <script src="main.js"></script>
+</body>
+</html> 
